@@ -1,4 +1,4 @@
-/*Universal Clear Fix/'s*/
+/*Universal Clear Fix*/
 .clearfix:before,
 .clearfix:after {
   content: "";
@@ -28,20 +28,16 @@ header {
 }
 
 /*Nav & Link*/
-.nav-bar ul li, .drop-menu {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0;
-}
-
-.nav-bar a {
+nav {
   display: block;
   font-size: 20px;
   padding: 7px 15px;
 }
 
+nav ul li, .drop-menu {
+  display: inline-block;
+  justify-content: center;
+}
 /*Footer*/
 footer {
   position: absolute;
@@ -82,3 +78,5 @@ section div:nth-child(2) {
 section div:nth-child(3) {
   background: url('../styles/backgrounds/projects-c.png') no-repeat center/cover;
 }
+
+/*Landing Page Section AKA Home*/
