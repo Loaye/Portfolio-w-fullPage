@@ -1,0 +1,20 @@
+/*Backgrounds per sections*/
+section:nth-of-type(1) {
+    background: url('../styles/backgrounds/home.png') no-repeat center/cover;
+}
+
+section:nth-of-type(2) {
+    background: url('../styles/backgrounds/about.png') no-repeat center/cover;
+}
+
+section:nth-of-type(3) {
+    background: url('../styles/backgrounds/projects-a.png') no-repeat center/cover;
+}
+
+section:nth-of-type(4) {
+    background: url('../styles/backgrounds/blog.png') no-repeat center/cover;
+}
+
+section:nth-of-type(5) {
+    background: url('../styles/backgrounds/contact.png') no-repeat center/cover;
+}
