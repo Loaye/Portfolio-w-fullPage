@@ -28,8 +28,8 @@ header {
 }
 
 /*Nav & Link*/
-.nav-bar ul {
-  display: flex;
+.nav-bar ul li, .drop-menu {
+  display: inline-flex;
   justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;

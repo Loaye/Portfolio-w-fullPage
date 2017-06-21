@@ -15,9 +15,11 @@
 
    nav span.icon-menu {
      display: block;
+     color: #f3f3f3;
    }
 
    nav span:hover {
-     color: #f3f3f3;
+     background-color: #fff;
+     color: #000;
    }
  };
