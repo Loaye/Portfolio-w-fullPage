@@ -12,18 +12,22 @@ header {
   display: block;
   width: 100%;
   z-index: 99999;
-  background-color: #000;
-  color: #f2f2f2;
-  opacity: .65;
 }
 
-/*Nav & Links Styles */
-a {
-  text-decoration: none;
+/*Nav & Link*/
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
 }
 
-
-
+.nav-bar a {
+  display: block;
+  font-size: 20px;
+  padding: 7px 15px;
+}
 
 /*Footer*/
 footer {
@@ -33,9 +37,6 @@ footer {
   display: block;
   width: 100%;
   z-index: 99999;
-  background-color: #000;
-  color: #f2f2f2;
-  opacity: .65;
 }
 
 /*Backgrounds per sections*/
