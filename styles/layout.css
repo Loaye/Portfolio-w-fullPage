@@ -2,7 +2,6 @@
 .clearfix {
   clear: both;
 }
-/*Page Wrap to set default body size*/
 
 /*Header*/
 header {
@@ -14,8 +13,17 @@ header {
   width: 100%;
   z-index: 99999;
   background-color: #000;
+  color: #f2f2f2;
   opacity: .65;
 }
+
+/*Nav & Links Styles */
+a {
+  text-decoration: none;
+}
+
+
+
 
 /*Footer*/
 footer {
@@ -26,6 +34,7 @@ footer {
   width: 100%;
   z-index: 99999;
   background-color: #000;
+  color: #f2f2f2;
   opacity: .65;
 }
 
