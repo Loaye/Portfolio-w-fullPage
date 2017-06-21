@@ -1,8 +1,21 @@
 /*Universal Clear Fix/'s*/
-.clearfix {
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
   clear: both;
 }
 
+.left-float {
+	float: left;
+}
+
+.right-float {
+	float: right;
+}
 /*Header*/
 header {
   position: fixed;
@@ -27,17 +40,6 @@ header {
   display: block;
   font-size: 20px;
   padding: 7px 15px;
-}
-
-.target {
-  position: absolute;
-  border-bottom: 4px solid transparent;
-  z-index: -1;
-  transform: translateX(-60px);
-}
-
-.nav-bar a, .target {
-  transition: all .35s ease-in-out;
 }
 
 /*Footer*/

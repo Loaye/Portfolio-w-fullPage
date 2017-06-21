@@ -1,0 +1,23 @@
+@media only screen and (min-width: 640px) {
+  nav span.icon-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-bar ul {
+     display: none;
+   }
+
+   .nav-bar li {
+     display: inline;
+   }
+
+   nav span.icon-menu {
+     display: block;
+   }
+
+   nav span:hover {
+     color: #f3f3f3;
+   }
+ };

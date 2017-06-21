@@ -6,6 +6,9 @@
     <!-- Reset Style Sheet -->
     <link rel="stylesheet" href="styles/reset.css">
 
+    <!-- Mobile -->
+    <meta name="viewport" content="width=device-width, intial-scale=1">
+
     <!-- Chosen Google font for whole page -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 
@@ -23,21 +26,29 @@
   <body>
     <header>
       <nav class="nav-bar">
+        <span class="icon-menu right-float"></span>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects/projects-a">Projects Main</a></li>
-          <li><a href="#projects/projects-b">Projects DunGen &and; Dragons</a></li>
-          <li><a href="#projects/projects-c">Projects Busmall</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <div class="content">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <div class="drop-down">
+              <li><a href="#projects/projects-a">Projects Main</a></li>
+              <li><a href="#projects/projects-b">Projects DunGen &and; Dragons</a></li>
+              <li><a href="#projects/projects-c">Projects Busmall</a></li>
+            </div>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </div>
         </ul>
       </nav>
-      <span class="target"></span>
     </header>
 
     <footer>
-      <h2><a href="https://www.tenbelowseattle.com">&copy;Ten Below LLC</a></h2>
+      <h2 class="left-float"><a href="https://www.tenbelowseattle.com">&copy;Ten Below LLC</a></h2>
+      <div class="right-float">
+        <a class="icon" href="https://github.com/Loaye"><span class="icon-github"></span></a>
+        <a class="icon" href="https://codepen.io/Loaye/"><span class="icon-codepen"></span></a>
+        <a class="icon" href="https://www.linkedin.com/in/jrcarstens/"><span class="icon-linkedin2"></span></a>
       </div>
     </footer>
 

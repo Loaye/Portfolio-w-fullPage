@@ -1,12 +1,20 @@
 //Initialization of plugin
 $(document).ready(function() {
   $('#fullpage').fullpage({
-    sectionSelector: '.vertical-scrolling',
-    slideSelector: '.horizontal-scrolling',
+    //NAV
+    menu: '#menu',
+    anchors: ['home', 'about', 'projects', 'blog', 'contact'],
     navigation: false,
     slidesNavigation: true,
+
+    //Scroll
+    loopBottom: true,
+
+    //Design
     controlArrows: true,
-    anchors: ['home', 'about', 'projects', 'blog', 'contact'],
-    menu: '#menu'
+
+    //Custom Selector
+    sectionSelector: '.vertical-scrolling',
+    slideSelector: '.horizontal-scrolling',
   });
 });
