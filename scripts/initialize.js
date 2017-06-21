@@ -3,9 +3,9 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
-    navigation: true,
+    navigation: false,
     slidesNavigation: true,
-    controlArrows: false,
+    controlArrows: true,
     anchors: ['home', 'about', 'projects', 'blog', 'contact'],
     menu: '#menu'
   });

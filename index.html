@@ -16,49 +16,64 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css">
 
     <!-- Personal Style sheet -->
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <footer>
+      <h2 class="footer-tenbelow"><a href="https://www.tenbelowseattle.com">&copy;Ten Below LLC</a></h2>
+      </div>
+    </footer>
+
     <div id="fullpage">
-      <section class="vertical-scrolling" data-anchor="home">
+        <section class="vertical-scrolling">
+          <h1>Jacob Carstens</h1>
+          <h2>Portfolio</h2>
+        </section>
 
-      </section>
+        <section class="vertical-scrolling">
+          <h2>About</h2>
+          <h2>Skills</h3>
+        </section>
 
-      <section class="vertical-scrolling" data-anchor="about">
+        <section class="vertical-scrolling">
+          <div class="horizontal-scrolling">
+            <h2>Projects Main</h2>
+          </div>
 
-      </section>
+          <div class="horizontal-scrolling">
+            <h2>DunGens &amp; Dragons</h2>
+          </div>
 
-      <section class="vertical-scrolling" data-anchor="projects">
-        <div class="horizontal-scrolling" data-anchor="">
-        </div>
+          <div class="horizontal-scrolling">
+            <h2>Bus Mall</h2>
+          </div>
+        </section>
 
-        <div class="horizontal-scrolling" data-anchor="">
-        </div>
+        <section class="vertical-scrolling">
+          <h2>Blog</h2>
+        </section>
 
-        <div class="horizontal-scrolling" data-anchor="">
-        </div>  
-      </section>
-
-      <section class="vertical-scrolling" data-anchor="blog">
-
-      </section>
-
-      <section class="vertical-scrolling" data-anchor="contact">
-
-      </section>
-    </div>
-    <!--Calling on jquery for use-->
+        <section class="vertical-scrolling">
+          <h2>Contact &and; Connect</h2>
+        </section>
+      </div>
+    </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
-
-    <!-- Calling on fullpage.min for use -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
-
-    <!-- Calls on handlebars by cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
-
-    <!-- Intializes fullpage plugin -->
     <script src="scripts/initialize.js"></script>
-  </body>
-</html>
+  </html>
