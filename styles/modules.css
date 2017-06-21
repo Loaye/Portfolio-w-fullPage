@@ -18,8 +18,9 @@
      color: #f3f3f3;
    }
 
-   nav span:hover {
+   nav span:hover ul {
      background-color: #fff;
      color: #000;
+     display: block;
    }
  };
