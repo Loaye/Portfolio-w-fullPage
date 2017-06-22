@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Jacob Carstens | Portfolio</title>
@@ -88,20 +88,21 @@
           </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-b">
-            <main>
-              <section id="articles">
-               <article class="template" data-category="cat">
-                 <header>
-                   <h1>Title</h1>
-                   <div class="byline">
-                     By <address><a href="">Author Name</a></address>
-                     published <time pubdate datetime="2000-01-01">Publish Time</time>
-                   </div>
-                 </header>
-                 <section class="article-body"></section>
-               </article>
-             </section>
-           </main>
+            <script id="template" type="text/x-handlebars-template">
+             <article data-author="{{author}}" data-category="{{category}}">
+               <header>
+                 <h1>{{title}}</h1>
+                 <div class="byline">
+                   By <address><a href="{{authorUrl}}">{{author}}</a></address>
+                   published <time pubdate datetime="{{publishedOn}}">{{publishedOn}}</time>
+                 </div>
+               </header>
+               <section class="article-body">{{{body}}}</section>
+               <a href="#" class="read-on">Read on &rarr;</a>
+               <hr>
+             </article>
+           </script>
+         </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">
             <h2>Summary</h2>
