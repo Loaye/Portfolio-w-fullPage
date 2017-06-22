@@ -84,15 +84,27 @@
 
         <section class="vertical-scrolling" data-anchor="projects">
           <div class="horizontal-scrolling" data-anchor="projects-a">
-            <h2>Projects Main</h2>
+            <h2>Project Intro</h2>
           </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-b">
-            <h2>DunGens &amp; Dragons</h2>
-          </div>
+            <main>
+              <section id="articles">
+               <article class="template" data-category="cat">
+                 <header>
+                   <h1>Title</h1>
+                   <div class="byline">
+                     By <address><a href="">Author Name</a></address>
+                     published <time pubdate datetime="2000-01-01">Publish Time</time>
+                   </div>
+                 </header>
+                 <section class="article-body"></section>
+               </article>
+             </section>
+           </main>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">
-            <h2>Bus Mall</h2>
+            <h2>Summary</h2>
           </div>
         </section>
 
@@ -109,5 +121,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/initialize.js"></script>
+    <script src="scripts/project.js"></script>
     <script src="scripts/app.js"></script>
   </html>
