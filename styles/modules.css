@@ -1,26 +1,41 @@
+.show {
+  display: block;
+  background-color: red;
+  position: absolute;
+  float: right;
+  margin-top: 15px;
+}
+
+.show li {
+  display: block;
+  position: relative;
+  padding: 5px;
+}
+
 @media only screen and (min-width: 640px) {
-  nav span.icon-menu {
+  .icon-menu {
     display: none;
   }
 }
 
 @media only screen and (max-width: 640px) {
-  .nav-bar ul {
+    ul {
      display: none;
    }
 
-   .nav-bar li {
+    nav li {
      display: inline;
    }
 
    nav span.icon-menu {
      display: block;
+     font-size: 2em;
      color: #f3f3f3;
+     float: right;
    }
 
    nav span:hover {
      background-color: #fff;
      color: #000;
-     
    }
  };

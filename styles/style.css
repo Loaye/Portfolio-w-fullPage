@@ -12,3 +12,12 @@ a {
 h1, h2, h3, p, li {
   color: #f3f3f3;
 }
+
+/*Buttons for Main page*/
+.btn {
+    display: inline-block;
+    padding: 5px 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: grey;
+}

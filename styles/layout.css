@@ -31,13 +31,49 @@ header {
 nav {
   display: block;
   font-size: 20px;
-  padding: 7px 15px;
+  padding: 10px 20px;
 }
 
-nav ul li, .drop-menu {
+nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li, .dropdown {
   display: inline-block;
   justify-content: center;
 }
+
+nav {
+  position: relative;
+}
+.dropdown-toggle {
+  padding: .5em 1em;
+  background: #777;
+  border-radius: .2em .2em 0 0;
+}
+ul.dropdown {
+  display:none;
+  position: absolute;
+  top: 100%;
+  margin-top: .5em;
+  background: #777;
+  min-width: 12em;
+  padding: 0;
+  border-radius: 0 0 .2em .2em;
+    li {
+      list-style-type: none;
+      a {
+        text-decoration: none;
+        padding: .5em 1em;
+        display: block;
+      }
+   }
+}
+
+
+
 /*Footer*/
 footer {
   position: absolute;
