@@ -22,6 +22,10 @@ h1, h2, h3, p, li {
     background-color: grey;
 }
 
+.center {
+  text-align: center;
+}
+
 /*Home Page*/
 .myName {
   font-size: 7em;
@@ -37,3 +41,5 @@ button {
   height: 50px;
   width: 125px;
 }
+
+/*Button Icons*/

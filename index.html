@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
+
+    <!-- Handlebars frame -->
+    <main>
+      <script id="article-template" type="text/x-handlebars-template">
+        <article>
+          <h2>{{title}}</h2>
+          <h2>{{author}}</h2>
+          <h2>{{body}}</h2>
+        </article>
+      </script>
+    </main>
   </head>
   <body>
     <header>
@@ -50,9 +61,11 @@
         <section class="vertical-scrolling" data-anchor="home">
           <h1 class="myName">Jacob Carstens</h1>
           <h2 class="myPortfolio">Portfolio</h2>
-          <button class="btn icon-github"></button>
-          <button class="btn icon-linkedin2"></button>
-          <button class="btn icon-codepen"></button>
+          <section class="center">
+            <button class="btn icon-github"></button>
+            <button class="btn icon-linkedin2"></button>
+            <button class="btn icon-codepen"></button>
+          </section>
         </section>
 
         <section class="vertical-scrolling" data-anchor="about">
@@ -88,22 +101,7 @@
           </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-b">
-            <main>
-              <script id="template" type="text/x-handlebars-template">
-               <article data-author="{{author}}" data-category="{{category}}">
-                 <header>
-                   <h1>{{title}}</h1>
-                   <div class="byline">
-                     By <address><a href="{{authorUrl}}">{{author}}</a></address>
-                     published <time pubdate datetime="{{publishedOn}}">{{publishedOn}}</time>
-                   </div>
-                 </header>
-                 <section class="article-body">{{{body}}}</section>
-                 <a href="#" class="read-on">Read on &rarr;</a>
-                 <hr>
-               </article>
-             </script>
-            </main>
+
          </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">

@@ -2,18 +2,16 @@
 [
   {
     "title":       "DunGen $amp; Dragons",
-    "category":    "Adventure",
-    "author":      "Jacob Carstens",
+    "author":      "Jacob Carstens &amp; Team",
     "authorUrl":   "http://www.imdb.com/name/nm0000102/",
-    "publishedOn": "2017-05-25",
+    "publishedOn": "2017-06-05",
     "body":        "<p>Lorem Ipsum the shit out of dis'</p>"
   },
   {
     "title":       "BusMall",
-    "category":    "Click or Treat",
     "author":      "Jacob Carstens",
     "authorUrl":   "http://www.imdb.com/name/nm0000102/",
     "publishedOn": "2017-05-15",
-    "body":        "<p>Half Bus.. Half Mall, all action! Rated R</p>""
+    "body":        "<p>Half Bus.. Half Mall, all action! Rated R</p>"
   }
 ]
