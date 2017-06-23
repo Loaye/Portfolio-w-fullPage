@@ -48,8 +48,8 @@
 
     <div id="fullpage">
         <section class="vertical-scrolling" data-anchor="home">
-          <h1>Jacob Carstens</h1>
-          <h2>Portfolio</h2>
+          <h1 class="myName">Jacob Carstens</h1>
+          <h2 class="myPortfolio">Portfolio</h2>
           <button class="btn icon-github"></button>
           <button class="btn icon-linkedin2"></button>
           <button class="btn icon-codepen"></button>
@@ -88,20 +88,22 @@
           </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-b">
-            <script id="template" type="text/x-handlebars-template">
-             <article data-author="{{author}}" data-category="{{category}}">
-               <header>
-                 <h1>{{title}}</h1>
-                 <div class="byline">
-                   By <address><a href="{{authorUrl}}">{{author}}</a></address>
-                   published <time pubdate datetime="{{publishedOn}}">{{publishedOn}}</time>
-                 </div>
-               </header>
-               <section class="article-body">{{{body}}}</section>
-               <a href="#" class="read-on">Read on &rarr;</a>
-               <hr>
-             </article>
-           </script>
+            <main>
+              <script id="template" type="text/x-handlebars-template">
+               <article data-author="{{author}}" data-category="{{category}}">
+                 <header>
+                   <h1>{{title}}</h1>
+                   <div class="byline">
+                     By <address><a href="{{authorUrl}}">{{author}}</a></address>
+                     published <time pubdate datetime="{{publishedOn}}">{{publishedOn}}</time>
+                   </div>
+                 </header>
+                 <section class="article-body">{{{body}}}</section>
+                 <a href="#" class="read-on">Read on &rarr;</a>
+                 <hr>
+               </article>
+             </script>
+            </main>
          </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">
@@ -122,6 +124,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/initialize.js"></script>
-    <script src="scripts/project.js"></script>
+    <script src="scripts/article.js"></script>
+    <script src="scripts/articleView.js"></script>
     <script src="scripts/app.js"></script>
   </html>

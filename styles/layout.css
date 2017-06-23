@@ -45,35 +45,6 @@ nav ul li, .dropdown {
   justify-content: center;
 }
 
-nav {
-  position: relative;
-}
-.dropdown-toggle {
-  padding: .5em 1em;
-  background: #777;
-  border-radius: .2em .2em 0 0;
-}
-ul.dropdown {
-  display:none;
-  position: absolute;
-  top: 100%;
-  margin-top: .5em;
-  background: #777;
-  min-width: 12em;
-  padding: 0;
-  border-radius: 0 0 .2em .2em;
-    li {
-      list-style-type: none;
-      a {
-        text-decoration: none;
-        padding: .5em 1em;
-        display: block;
-      }
-   }
-}
-
-
-
 /*Footer*/
 footer {
   position: absolute;
@@ -115,4 +86,4 @@ section div:nth-child(3) {
   background: url('../styles/backgrounds/projects-c.png') no-repeat center/cover;
 }
 
-/*Landing Page Section AKA Home*/
+/*Projects */

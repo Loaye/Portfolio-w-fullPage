@@ -21,3 +21,19 @@ h1, h2, h3, p, li {
     border-radius: 3px;
     background-color: grey;
 }
+
+/*Home Page*/
+.myName {
+  font-size: 7em;
+  text-align: center;
+}
+
+.myPortfolio {
+  font-size: 3em;
+  text-align: center;
+}
+
+button {
+  height: 50px;
+  width: 125px;
+}
