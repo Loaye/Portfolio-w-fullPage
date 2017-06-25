@@ -23,17 +23,23 @@
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
 
-    <!-- Handlebars frame -->
-    <main>
-      <script id="article-template" type="text/x-handlebars-template">
-        <article>
-          <h2>{{title}}</h2>
-          <h2>{{author}}</h2>
-          <h2>{{body}}</h2>
-        </article>
-      </script>
-    </main>
+    <!-- Handlebars frame/template -->
+    <script id="project-template" type="text/x-handlebars-template">
+      <article>
+        <header>
+          <a href="{{projectUrl}}"<h3>{{title}}</h3>
+          <div>
+            <a href="{{author}}"></a>
+            <h3>{{publishedOn}}</h3>
+          </div>
+          <section>
+            {{{body}}}
+          </section>
+        </header>
+      </article>
+  </script>
   </head>
+
   <body>
     <header>
       <nav>
@@ -97,16 +103,17 @@
 
         <section class="vertical-scrolling" data-anchor="projects">
           <div class="horizontal-scrolling" data-anchor="projects-a">
-            <h2>Project Intro</h2>
+            <section id="projects-filler">
+
+            </section>
           </div>
 
-          <div class="horizontal-scrolling" data-anchor="projects-b">
-
+          <!-- <div class="horizontal-scrolling" data-anchor="projects-b">
          </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">
             <h2>Summary</h2>
-          </div>
+          </div> -->
         </section>
 
         <section class="vertical-scrolling" data-anchor="blog">
@@ -125,4 +132,7 @@
     <script src="scripts/article.js"></script>
     <script src="scripts/articleView.js"></script>
     <script src="scripts/app.js"></script>
+    <script>
+      Article.fetchAll();
+    </script>
   </html>

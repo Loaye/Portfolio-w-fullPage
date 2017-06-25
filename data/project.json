@@ -3,14 +3,14 @@
   {
     "title":       "DunGen $amp; Dragons",
     "author":      "Jacob Carstens &amp; Team",
-    "authorUrl":   "http://www.imdb.com/name/nm0000102/",
+    "projectUrl":   "https://loaye.github.io/DunGen-Dragons/",
     "publishedOn": "2017-06-05",
     "body":        "<p>Lorem Ipsum the shit out of dis'</p>"
   },
   {
     "title":       "BusMall",
     "author":      "Jacob Carstens",
-    "authorUrl":   "http://www.imdb.com/name/nm0000102/",
+    "projectUrl":   " https://loaye.github.io/bus_mall/",
     "publishedOn": "2017-05-15",
     "body":        "<p>Half Bus.. Half Mall, all action! Rated R</p>"
   }
