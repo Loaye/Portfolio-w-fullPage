@@ -42,7 +42,7 @@ projectView.create = function() {
     body: $('#body').val(),
   });
 
-  $('#project-template').append(article.toHtml());
+  $('#project-template').append(project.toHtml());
   $('pre code').each(function(i, block) {
     hljs.highlightBlock(block);
   });

@@ -25,7 +25,6 @@
 
     <!-- Handlebars frame/template -->
     <script id="project-template" type="text/x-handlebars-template">
-      <article>
         <header>
           <a href="{{projectUrl}}"<h3>{{title}}</h3>
           <div>
@@ -36,7 +35,6 @@
             {{{body}}}
           </section>
         </header>
-      </article>
   </script>
   </head>
 
@@ -106,12 +104,12 @@
             <section id="projects-filler" class="tab-menu"></section>
           </div>
 
-          <!-- <div class="horizontal-scrolling" data-anchor="projects-b">
+          <div class="horizontal-scrolling" data-anchor="projects-b">
          </div>
 
           <div class="horizontal-scrolling" data-anchor="projects-c">
             <h2>Summary</h2>
-          </div> -->
+          </div>
         </section>
 
         <section class="vertical-scrolling" data-anchor="blog">
@@ -127,8 +125,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
     <script src="scripts/initialize.js"></script>
-    <script src="scripts/article.js"></script>
-    <script src="scripts/articleView.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/projectView.js"></script>
     <script src="scripts/app.js"></script>
     <script>
       Article.fetchAll();
