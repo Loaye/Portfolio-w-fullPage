@@ -28,7 +28,7 @@ Project.fetchAll = function() {
   var serverETag;
 
   $.ajax({
-    url: '/data/.projects.json',
+    url: '/data/.project.json',
     type: 'HEAD',
     success: function(data, messsage, xhr) {
       serverETag = xhr.getResponseHeader('ETag');
@@ -42,7 +42,7 @@ Project.fetchAll = function() {
     Project.loadAll(JSON.parse(localStorage.rawData));
     projectView.initIndexPage();
   } else {
-    $.getJSON('/../data/projects.json', function(data) {
+    $.getJSON('/../data/project.json', function(data) {
       localStorage.rawData = JSON.stringify(data);
       localStorage.ETag = serverETag;
       Project.loadAll(data);
