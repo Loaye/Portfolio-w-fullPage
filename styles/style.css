@@ -1,3 +1,4 @@
+
 /*font family for page*/
 html {
   font-family: 'Ubuntu', sans-serif;
@@ -7,8 +8,10 @@ html {
 a {
   text-decoration: none;
   color: #f3f3f3;
+  text-shadow: 2px 2px 4px #000;
 }
 
+/*default color for text*/
 h1, h2, h3, p, li {
   color: #f3f3f3;
 }
@@ -30,11 +33,13 @@ h1, h2, h3, p, li {
 .myName {
   font-size: 7em;
   text-align: center;
+  text-shadow: 2px 2px 4px #000;
 }
 
 .myPortfolio {
   font-size: 3em;
   text-align: center;
+  text-shadow: 2px 2px 4px #000;
 }
 
 button {
@@ -43,3 +48,42 @@ button {
 }
 
 /*Button Icons*/
+button.icon-github, button.icon-codepen, button.icon-linkedin2 {
+  font-size: 30px;
+  color: #f2f2f2;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/*Contacts Layout*/
+h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/*Form Layout*/
+form {
+  max-width: 420px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feedback-input {
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 3px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 3px solid #f2f2f2;
+  transition: all;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}

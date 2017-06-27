@@ -4,7 +4,7 @@
 
 .show {
   display: block;
-  background-color: red;
+  background-color: grey;
   position: absolute;
   float: right;
   margin-top: 15px;

@@ -56,8 +56,8 @@
       <h2 class="left-float"><a href="https://www.tenbelowseattle.com">&copy;Ten Below LLC</a></h2>
       <div class="right-float">
         <a href="https://github.com/Loaye"><span class="icon-github"></span></a>
-        <a href="https://codepen.io/Loaye/"><span class="icon-codepen"></span></a>
         <a href="https://www.linkedin.com/in/jrcarstens/"><span class="icon-linkedin2"></span></a>
+        <a href="https://codepen.io/Loaye/"><span class="icon-codepen"></span></a>
       </div>
     </footer>
 
@@ -66,9 +66,9 @@
           <h1 class="myName">Jacob Carstens</h1>
           <h2 class="myPortfolio">Portfolio</h2>
           <section class="center">
-            <button class="btn icon-github"></button>
-            <button class="btn icon-linkedin2"></button>
-            <button class="btn icon-codepen"></button>
+            <a href="https://github.com/Loaye"><button class="btn icon-github"></button></a>
+            <a href="https://www.linkedin.com/in/jrcarstens/"><button class="btn icon-linkedin2"></button></a>
+            <a href="https://codepen.io/Loaye/"><button class="btn icon-codepen"></button></a>
           </section>
         </section>
 
@@ -118,6 +118,35 @@
 
         <section class="vertical-scrolling" data-anchor="connect">
           <h2>Contact &amp; Connect</h2>
+          <div class="form-layout">
+            <form class="form">
+
+              <p class="first-name">
+                <input name="first-name" type="text" class="feedback-input" placeholder="First Name">
+              </p>
+
+              <p class="last-name">
+                <input name="last-name" type="text" class="feedback-input" placeholder="Last Name">
+              </p>
+
+              <p class="email">
+                <input name="email" type="text" class="feedback-input"
+                placeholder="Email">
+              </p>
+
+              <p class="number">
+                <input name="email" type="text" class="feedback-input"
+                placeholder="Phone Number">
+              </p>
+
+              <p class="comment">
+                <textarea name="comment" type="text" class="feedback-input"
+                placeholder="Comment"></textarea>
+              </p>
+
+              <input type="submit" value="SUBMIT">
+            </form>
+          </div>
         </section>
       </div>
     </body>
@@ -129,6 +158,6 @@
     <script src="scripts/projectView.js"></script>
     <script src="scripts/app.js"></script>
     <script>
-      Article.fetchAll();
+      Project.fetchAll();
     </script>
   </html>
