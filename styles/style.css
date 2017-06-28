@@ -11,6 +11,10 @@ a {
   text-shadow: 2px 2px 4px #000;
 }
 
+a:hover {
+  color: #9CF5A6;
+}
+
 /*default color for text*/
 h1, h2, h3, p, li {
   color: #f3f3f3;
@@ -30,6 +34,32 @@ a {
   margin-right: 15px;
 }
 
+/*NAV for main page*/
+nav ul li > a {
+  text-decoration: none;
+  z-index: 1;
+}
+
+nav ul li > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background: #9CF5A6;
+  visibility: hidden;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: .5s linear;
+}
+
+nav ul li > a:hover:before,
+nav ul li > a:focus:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
 /*Buttons for Main page*/
 .btn {
     display: inline-block;
@@ -37,6 +67,10 @@ a {
     border: 1px solid black;
     border-radius: 3px;
     background-color: grey;
+}
+
+.btn:hover {
+  color: #9CF5A6;
 }
 
 .center {
@@ -48,11 +82,13 @@ a {
   font-size: 7em;
   text-align: center;
   text-shadow: 2px 2px 4px #000;
+  margin-bottom: 15px;
 }
 
 .myPortfolio {
   font-size: 3em;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 button {
@@ -62,7 +98,7 @@ button {
 }
 
 button:hover {
-  border: 1px solid #39CCCC;
+  border: 1px solid #9CF5A6;
 }
 
 /*Button Icons*/
@@ -74,9 +110,17 @@ button.icon-github, button.icon-codepen, button.icon-linkedin2 {
 }
 
 /*Contacts Layout*/
-h2 {
+ .connect {
   text-align: center;
   margin-bottom: 15px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+.form-message {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 18px;
 }
 /*Form Layout*/
 form {
@@ -108,7 +152,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: 3px solid #39CCCC;
+  border: 3px solid #9CF5A6;
   background: grey;
 }
 
@@ -134,5 +178,5 @@ textarea {
 }
 
 [type="submit"]:hover {
-  background: #39CCCC;
+  background: #9CF5A6;
 }
