@@ -16,6 +16,20 @@ h1, h2, h3, p, li {
   color: #f3f3f3;
 }
 
+/*HEADER*/
+header ul li {
+  margin: 5px;
+}
+
+/*FOOTER*/
+a {
+  margin-left: 15px;
+}
+
+.right-float {
+  margin-right: 15px;
+}
+
 /*Buttons for Main page*/
 .btn {
     display: inline-block;
@@ -39,12 +53,16 @@ h1, h2, h3, p, li {
 .myPortfolio {
   font-size: 3em;
   text-align: center;
-  text-shadow: 2px 2px 4px #000;
 }
 
 button {
   height: 50px;
   width: 125px;
+  text-shadow: 2px 2px 4px #000;
+}
+
+button:hover {
+  border: 1px solid #39CCCC;
 }
 
 /*Button Icons*/
