@@ -55,8 +55,8 @@ footer {
   z-index: 99999;
 }
 
-/*Backgrounds per sections*/
-/*Vertical Sections*/
+/*Backgrounds per sections
+Vertical Sections*/
 section:nth-of-type(1) {
     background: url('../styles/backgrounds/home.png') no-repeat center/cover;
 }
