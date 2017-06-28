@@ -1,5 +1,5 @@
 //Initialization of plugin
-$(document).ready(function() {
+function initialize() {
   $('#fullpage').fullpage({
     //NAV
     menu: '#menu',
@@ -17,4 +17,4 @@ $(document).ready(function() {
     sectionSelector: '.vertical-scrolling',
     slideSelector: '.horizontal-scrolling',
   });
-});
+}

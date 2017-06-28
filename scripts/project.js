@@ -10,7 +10,7 @@ function Project(rawDataObj) {
 
 Project.all =  [];
 
-Project.prototype.toHthml = function () {
+Project.prototype.toHtml = function () {
   let template = Handlebars.compile($('#project-template').text());
   return template(this);
 };
@@ -28,7 +28,7 @@ Project.fetchAll = function() {
   var serverETag;
 
   $.ajax({
-    url: '/data/.project.json',
+    url: '/data/project.json',
     type: 'HEAD',
     success: function(data, messsage, xhr) {
       serverETag = xhr.getResponseHeader('ETag');

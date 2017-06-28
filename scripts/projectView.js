@@ -53,8 +53,9 @@ projectView.create = function() {
 
 projectView.initIndexPage = function() {
   Project.all.forEach(function(project){
-    $('#project-template').append(project.toHtml());
+    $('#project-section').append(project.toHtml());
   });
 
   projectView.handleNav();
+  initialize();
 };

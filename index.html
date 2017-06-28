@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/reset.css">
 
     <!-- Mobile -->
-    <meta name="viewport" content="width=device-width, intial-scale=1">
+    <meta name="viewport" content="width=device-width initial-scale=1">
 
     <!-- Chosen Google font for whole page -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
@@ -25,17 +25,17 @@
 
     <!-- Handlebars frame/template -->
     <script id="project-template" type="text/x-handlebars-template">
-        <header>
-          <a href="{{projectUrl}}"<h3>{{title}}</h3>
-          <div>
-            <a href="{{author}}"></a>
-            <h3>{{publishedOn}}</h3>
-          </div>
-          <section>
-            {{{body}}}
-          </section>
-        </header>
-  </script>
+    <div class="horizontal-scrolling">
+      <a href="{{projectUrl}}"<h3>{{title}}</h3>
+        <div>
+          <a href="{{author}}"></a>
+          <h3>{{publishedOn}}</h3>
+        </div>
+        <section>
+          {{{body}}}
+        </section>
+      </div>
+      </script>
   </head>
 
   <body>
@@ -99,16 +99,8 @@
           </ul>
         </section>
 
-        <section class="vertical-scrolling" data-anchor="projects">
+        <section id="project-section" class="vertical-scrolling" data-anchor="projects">
           <div class="horizontal-scrolling" data-anchor="projects-a">
-            <section id="projects-filler" class="tab-menu"></section>
-          </div>
-
-          <div class="horizontal-scrolling" data-anchor="projects-b">
-         </div>
-
-          <div class="horizontal-scrolling" data-anchor="projects-c">
-            <h2>Summary</h2>
           </div>
         </section>
 

@@ -1,8 +1,7 @@
-'use strict';
 [
   {
-    "title":       "DunGen $amp; Dragons",
-    "author":      "Jacob Carstens &amp; Team",
+    "title":       "DunGen & Dragons",
+    "author":      "Jacob Carstens & Team",
     "projectUrl":   "https://loaye.github.io/DunGen-Dragons/",
     "publishedOn": "2017-06-05",
     "body":        "<p>Lorem Ipsum the shit out of dis'</p>"
