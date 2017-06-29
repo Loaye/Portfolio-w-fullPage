@@ -1,61 +1,67 @@
 'use strict';
 
-var projectView = {};
+var app = app || {}
 
-projectView.handleNav = function() {
-  $('nav').on('click', 'li.tab', function(c) {
-    c.preventDefault();
-    $('.tab').removeClass('clicked');
-    $(this).addClass('clicked');
-    $('.tab-content').hide();
-    var $tab = $(this).data('content');
-    $('#' + $tab).show();
+(function(module) {
+  var projectView = {};
+
+  projectView.handleNav = function() {
+    $('nav').on('click', 'li.tab', function(c) {
+      c.preventDefault();
+      $('.tab').removeClass('clicked');
+      $(this).addClass('clicked');
+      $('.tab-content').hide();
+      var $tab = $(this).data('content');
+      $('#' + $tab).show();
+    });
+
+    $('nav .tab:nth-child(2)').click();
+  };
+
+  projectView.showNav = function() {
+    $('nav').on('mouseover', 'span', function() {
+      $('nav ul').toggleClass('shown');
+    });
+
+    $('nav ul').on('mouseleave', function(){
+      $('this').removeClass('shown');
+    });
+  };
+
+  $(document).ready(function(){
+    projectView.handleNav();
+    projectView.showNav();
   });
 
-  $('nav .tab:nth-child(2)').click();
-};
+  projectView.create = function() {
+    let project;
+    $('#projects').empty();
 
-projectView.showNav = function() {
-  $('nav').on('mouseover', 'span', function() {
-    $('nav ul').toggleClass('shown');
-  });
+    project = new Project({
+      title: $('#title').val(),
+      author: $('#author').val(),
+      projectUrl: $('#projectUrl').val(),
+      publishedOn: $('#publishedOn').val(),
+      body: $('#body').val(),
+    });
 
-  $('nav ul').on('mouseleave', function(){
-    $('this').removeClass('shown');
-  });
-};
+    $('#project-template').append(project.toHtml());
+    $('pre code').each(function(i, block) {
+      hljs.highlightBlock(block);
+    });
 
-$(document).ready(function(){
-  projectView.handleNav();
-  projectView.showNav();
-});
+    $('#export-field').show();
+    $('#project-json').val(`${JSON.stringify(project)},`);
+  };
 
-projectView.create = function() {
-  let project;
-  $('#projects').empty();
+  projectView.initIndexPage = (function()) {
+    Project.all.forEach(function(project){
+      $('#project-section').append(project.toHtml());
+    });
 
-  project = new Project({
-    title: $('#title').val(),
-    author: $('#author').val(),
-    projectUrl: $('#projectUrl').val(),
-    publishedOn: $('#publishedOn').val(),
-    body: $('#body').val(),
-  });
+    projectView.handleNav();
+    initialize();
+  };
 
-  $('#project-template').append(project.toHtml());
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
-  });
-
-  $('#export-field').show();
-  $('#project-json').val(`${JSON.stringify(project)},`);
-};
-
-projectView.initIndexPage = function() {
-  Project.all.forEach(function(project){
-    $('#project-section').append(project.toHtml());
-  });
-
-  projectView.handleNav();
-  initialize();
-};
+  module.projectView = projectView;
+}(app));
