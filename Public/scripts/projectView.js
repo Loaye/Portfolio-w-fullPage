@@ -1,6 +1,5 @@
 'use strict';
-
-var app = app || {}
+var app = app || {};
 
 (function(module) {
   var projectView = {};
@@ -37,7 +36,7 @@ var app = app || {}
     let project;
     $('#projects').empty();
 
-    project = new Project({
+    project = new app.Project({
       title: $('#title').val(),
       author: $('#author').val(),
       projectUrl: $('#projectUrl').val(),
@@ -54,8 +53,8 @@ var app = app || {}
     $('#project-json').val(`${JSON.stringify(project)},`);
   };
 
-  projectView.initIndexPage = (function()) {
-    Project.all.forEach(function(project){
+  projectView.initIndexPage = function() {
+    app.Project.all.forEach(function(project){
       $('#project-section').append(project.toHtml());
     });
 
