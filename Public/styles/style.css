@@ -108,6 +108,12 @@ button.icon-github, button.icon-codepen, button.icon-linkedin2 {
   margin-bottom: 15px;
 }
 
+.military p {
+  width: 750px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
 .military h2 {
   font-size: 24px;
   text-shadow: 2px 2px 4px #000;
@@ -146,11 +152,21 @@ button.icon-github, button.icon-codepen, button.icon-linkedin2 {
   text-align: center;
   line-height: 20px;
   cursor: pointer;
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 .skills{
   text-align: center;
 }
+
+/*PROJECTS MAIN PAGE*/
+
+
+/*PROJECTS SECOND PAGE - D&D*/
+
+/*PROJECTS THIRD PAGE - BUS MALL*/
 
 /*BLOG*/
 .blog-page h2{
