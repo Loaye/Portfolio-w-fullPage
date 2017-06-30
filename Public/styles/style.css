@@ -157,13 +157,24 @@ button.icon-github, button.icon-codepen, button.icon-linkedin2 {
   margin-top: 10px;
 }
 
-.skills{
+.skills {
   text-align: center;
 }
 
 /*PROJECTS MAIN PAGE*/
-
-
+.project-styles h2, h3{
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 15px;
+}
+ .project-styles p {
+   text-align: center;
+   width: 750px;
+   margin: 0 auto;
+   line-height: 20px;
+   margin-bottom: 15px;
+   margin-top: 15px;
+ }
 /*PROJECTS SECOND PAGE - D&D*/
 
 /*PROJECTS THIRD PAGE - BUS MALL*/
