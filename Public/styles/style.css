@@ -37,7 +37,7 @@ a {
 /*NAV for main page*/
 nav ul li > a {
   text-decoration: none;
-  z-index: 1;
+  z-index: 999999;
 }
 
 nav ul li > a:before {
@@ -46,7 +46,6 @@ nav ul li > a:before {
   width: 100%;
   height: 3px;
   bottom: 0;
-  left: 0;
   background: #9CF5A6;
   visibility: hidden;
   border-radius: 5px;
@@ -62,11 +61,10 @@ nav ul li > a:focus:before {
 
 /*Buttons for Main page*/
 .btn {
-    display: inline-block;
-    padding: 5px 25px;
-    border: 1px solid black;
-    border-radius: 3px;
-    background-color: grey;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #f3f3f3;
 }
 
 .btn:hover {
@@ -79,22 +77,15 @@ nav ul li > a:focus:before {
 
 /*Home Page*/
 .myName {
-  font-size: 7em;
+  font-size: 4em;
   text-align: center;
   text-shadow: 2px 2px 4px #000;
-  margin-bottom: 15px;
-}
-
-.myPortfolio {
-  font-size: 3em;
-  text-align: center;
   margin-bottom: 25px;
 }
 
 button {
   height: 50px;
   width: 125px;
-  text-shadow: 2px 2px 4px #000;
 }
 
 button:hover {
@@ -104,9 +95,95 @@ button:hover {
 /*Button Icons*/
 button.icon-github, button.icon-codepen, button.icon-linkedin2 {
   font-size: 30px;
-  color: #f3f3f3;
-  text-shadow: 2px 2px 4px #000;
+  color: #0E1013;
   cursor: pointer;
+}
+
+/*About Me Page Styling*/
+.military {
+  text-align: center;
+}
+
+.military, h2, p {
+  margin-bottom: 15px;
+}
+
+.military p {
+  width: 750px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.military h2 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px #000;
+  text-decoration: underline;
+}
+
+.military h3 {
+  font-size: 18px;
+  text-shadow: 2px 2px 4px #000;
+  text-decoration: underline;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.military li {
+  margin: 5px 0px;
+}
+
+.portrait {
+  width: 250px;
+  height: 420px;
+  cursor: pointer;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.invisible {
+  display: none;
+}
+
+.ranger:hover {
+  cursor: pointer;
+}
+
+.summary {
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  width: 750px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.skills {
+  text-align: center;
+}
+
+/*PROJECTS MAIN PAGE*/
+.project-styles h2, h3{
+  text-align: center;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 15px;
+}
+ .project-styles p {
+   text-align: center;
+   width: 750px;
+   margin: 0 auto;
+   line-height: 20px;
+   margin-bottom: 15px;
+   margin-top: 15px;
+ }
+/*PROJECTS SECOND PAGE - D&D*/
+
+/*PROJECTS THIRD PAGE - BUS MALL*/
+
+/*BLOG*/
+.blog-page h2{
+  text-align: center;
+  font-size: 36px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 /*Contacts Layout*/
