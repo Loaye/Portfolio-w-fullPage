@@ -166,6 +166,7 @@ button.icon-github, button.icon-codepen, button.icon-linkedin2 {
   text-align: center;
   text-shadow: 2px 2px 4px #000;
   margin-bottom: 15px;
+  text-decoration: underline;
 }
  .project-styles p {
    text-align: center;
